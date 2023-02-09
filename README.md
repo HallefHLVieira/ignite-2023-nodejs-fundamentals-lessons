@@ -22,3 +22,43 @@ Este é um projeto construído por meio das aulas do módulo 01 da trilha 2023 d
 ```
 npm run dev
 ```
+
+#### Rotas da aplicação
+
+- Esse projeto possui quatro rotas básicas: Criar, editar, buscar e deletar um registro no banco.
+- Segue abaixo o Curl de cada endpoint para testes.
+
+- Para criar um novo registro, será necessário informar 2 parâmmetros no body da request
+```
+curl --request POST \
+  --url http://localhost:3333/users \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"name": "{coloque seu nome}",
+	"email": "{coloque seu email}"
+}'
+```
+
+- Para buscar um registro, será necessário informar 1 parâmetro como query params
+``` 
+curl --request GET \
+  --url 'http://localhost:3333/users?%20search=hallef' \
+  --header 'Content-Type: application/json'
+```
+
+- para editar um registro, será necessário informar os parâmetros no body da request
+```
+curl --request PUT \
+  --url http://localhost:3333/users/a5b3acb8-8a51-408c-8251-c68debb383d3 \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"name":"Suellen Gomes",
+	"email":"su@ellen.com"
+}'
+```
+- Para deletar um registro, será necessário informar o id do registro na rota da request
+```
+curl --request DELETE \
+  --url http://localhost:3333/users/0c4f1624-0409-4efc-a548-605a5d89bca9 \
+  --header 'Content-Type: application/json'
+```
