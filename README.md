@@ -1,4 +1,5 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/HallefHLVieira/ignite-2023-nodejs-fundamentals-lessons)
+![GitHub contributors](https://img.shields.io/github/contributors/HallefHLVieira/ignite-2023-nodejs-fundamentals-lessons)
 
 ## 📝 ignite-2023-nodejs-fundamentals-lessons 🇺🇸️ 🇬🇧️
 This is a API whitout external deps.
