@@ -46,19 +46,19 @@ curl --request GET \
   --header 'Content-Type: application/json'
 ```
 
-- para editar um registro, será necessário informar os parâmetros no body da request
+- para editar um registro, será necessário informar os parâmetros no body da request + id do registro na rota da request
 ```
 curl --request PUT \
-  --url http://localhost:3333/users/a5b3acb8-8a51-408c-8251-c68debb383d3 \
+  --url http://localhost:3333/users/{UUID_AQUI} \
   --header 'Content-Type: application/json' \
   --data '{
-	"name":"Suellen Gomes",
-	"email":"su@ellen.com"
+	"name": "{coloque sua alteracao}",
+	"email": "{coloque sua alteracao}"
 }'
 ```
 - Para deletar um registro, será necessário informar o id do registro na rota da request
 ```
 curl --request DELETE \
-  --url http://localhost:3333/users/0c4f1624-0409-4efc-a548-605a5d89bca9 \
+  --url http://localhost:3333/users/{UUID_AQUI} \
   --header 'Content-Type: application/json'
 ```
