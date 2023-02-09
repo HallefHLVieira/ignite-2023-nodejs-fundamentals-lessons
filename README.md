@@ -34,8 +34,8 @@ curl --request POST \
   --url http://localhost:3333/users \
   --header 'Content-Type: application/json' \
   --data '{
-	"name": "{coloque seu nome}",
-	"email": "{coloque seu email}"
+	"name": "{SEU_NOME}",
+	"email": "{SEU_EMAIL}"
 }'
 ```
 
@@ -52,8 +52,8 @@ curl --request PUT \
   --url http://localhost:3333/users/{UUID_AQUI} \
   --header 'Content-Type: application/json' \
   --data '{
-	"name": "{coloque sua alteracao}",
-	"email": "{coloque sua alteracao}"
+	"name": "{SUA_ALTERAÇÃO}",
+	"email": "{SUA_ALTERAÇÃO}"
 }'
 ```
 - Para deletar um registro, será necessário informar o id do registro na rota da request
