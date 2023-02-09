@@ -42,7 +42,7 @@ curl --request POST \
 - Para buscar um registro, será necessário informar 1 parâmetro como query params
 ``` 
 curl --request GET \
-  --url 'http://localhost:3333/users?%20search=hallef' \
+  --url 'http://localhost:3333/users?%20search={NOME_DO_REGISTRO}' \
   --header 'Content-Type: application/json'
 ```
 
